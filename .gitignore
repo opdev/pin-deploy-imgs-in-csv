@@ -14,3 +14,5 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 pin-deploy-imgs-in-csv
+pin-deploy-imgs-in-csv-linux-amd64
+pin-deploy-imgs-in-csv-darwin-amd64
