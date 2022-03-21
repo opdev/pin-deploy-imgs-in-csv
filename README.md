@@ -24,3 +24,20 @@ the tag with the digest of the image at that point in time
 ```
 
 To see the release version, run `pin-deploy-imgs-in-csv version`.
+
+## Testing
+
+A basic test suite is available using `make test`.
+
+```text
+$ make test
+./test/test.sh
+Checking system for requirements.
+Verifying the test binary is built and lives at a known path.
+Creating a temporary directory and copying test fixtures into it.
+Running the pin tool against the fixture.
+Test: the tool must not modify any images that are already referenced via digest.
+Test: the tool must resolve an images digest when it does not contain a tag at all.
+Test: the tool must resolve an image that is referenced via tag to its digest, and inject the tag as a comment.
+All tests passed!
+```

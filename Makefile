@@ -26,3 +26,7 @@ build-linux:
 build-darwin:
 	GOOS=darwin GOARCH=amd64 go build -o $(BINARY)-darwin-amd64 -ldflags "-X github.com/opdev/pin-deploy-imgs-in-csv/cmd.version=$(RELEASE_TAG)" main.go
 	@ls | grep $(BINARY)-darwin-amd64
+
+.PHONY: test
+test: build
+	./test/test.sh
