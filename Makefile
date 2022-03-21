@@ -1,6 +1,7 @@
 VERSION=$(shell git rev-parse HEAD)
 BINARY=pin-deploy-imgs-in-csv
 RELEASE_TAG ?= "unknown"
+# This is a test comment - it will be removed.
 
 # build for your system
 .PHONY: build
